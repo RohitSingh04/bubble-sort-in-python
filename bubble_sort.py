@@ -1,16 +1,8 @@
-
-def bubblesort(lista):
-
-    for n in range(len(lista)-1, 0, -1):
-        for i in range(n):
-            if lista[i] > lista[i + 1]:
-                temp = lista[i]
-                lista[i] = lista[i + 1]
-                lista[i + 1] = temp
-
-
-numeros = [7, 19, 1, 2, 13, 5, 23, 29, 11, 17, 6]
-print(numeros)
-bubblesort(numeros)
-print(numeros)
-
+num=[5,7,4,8,9,2]
+def bubblesort(num):
+    for i in range(len(num)-1,0,-1):
+    for j in range(i):
+    if num[j]>num[j+1]:
+    num[j],num[j+1]=num[j+1],num[j]
+bubblesort(num)
+print(num)
